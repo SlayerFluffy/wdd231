@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--image memory size threshhold is 125kB or less per image for this class-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Drew Jezek">
+    <meta name="description" content="A landing site for web page project for WDD231">
+    <title>WDD231 Course Home Page</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/style-sm.css">
+    <link rel="stylesheet" href="/styles/style-lg.css">
+    <script src="/scripts/nav.js" defer></script>
+    <script src="/scripts/dates.js" defer></script>
+    <script src="/scripts/courses.js" defer></script>
+    <!--Fonts-->
+</head>
+<body>
+    <header>
+        <img src="/images/logo.svg" alt="DJ logo">
+        <span>Drew Jezek</span>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber.html">Chamber Project</a></li>
+                <li><a href="final.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <H1>Home</H1>
+        <section>
+            <H2>About Me</H2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse facere, repellendus cupiditate nobis veritatis beatae quis, enim modi officia, quod ut quasi voluptatem sed iure eum velit soluta ex minima.</p>
+        </section>
+        <section>
+            <H2>Student Photo</H2>
+            <img src="/images/self.jpg" alt="Photo of Drew Jezek and his baby">
+        </section>
+        <section>
+            <H2>Web Certificate Courses</H2>
+            <section id="courseButtons">
+                <button type="button" id="allCourse">All Courses</button>
+                <button type="button" id="wddCourse">WDD Courses</button>
+                <button type="button" id="cseCourse">CSE Courses</button>
+            </section>
+            <section id="courses"></section>
+            <p id="credits"></p>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/drew-jezek/"><img src="/images/linkedinIcon.svg"
+                alt="linkedIn icon"></a>
+        <a href="https://github.com/SlayerFluffy"><img src="/images/icons8-github.svg" alt="Github icon"></a>
+        <a href="https://www.facebook.com/the.drewsifer"><img src="/images/icons8-facebook.svg" alt="Facebook icon"></a>
+        <a href="https://www.instagram.com/drewjezek/"><img src="/images/icons8-instagram.svg" alt="Instagram icon"></a>
+        <div class="copywrite">
+            <span id="copyYear"></span>
+            <p>| Drew Jezek | USA</p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
