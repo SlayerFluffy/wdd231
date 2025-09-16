@@ -115,3 +115,16 @@ function populate(courses, button) {
 listButton.addEventListener("click", function (event) {
     populate(courses, event.target.id);
 });
+
+
+
+// hamburger button on small screen
+const ham = document.querySelector(".hamburger");
+
+function hamToggle() {
+    if (ham.style.display === "block") {
+        ham.style.display = "none";
+    } else {
+        ham.style.display = "block";
+    }
+}
