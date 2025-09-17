@@ -6,5 +6,5 @@ const modYear = document.querySelector("#lastModified");
 const today = new Date();
 
 // format string output and insert into HTML
-copyYear.innerHTML = `${today.getFullYear()}`;
+copyYear.innerHTML = `&copy${today.getFullYear()}`;
 modYear.innerHTML = `Last Modified: ${document.lastModified}`;

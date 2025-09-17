@@ -19,51 +19,58 @@
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/courses.js" defer></script>
     <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <header>
         <div id="title">
-            <img src="images/logo.svg" alt="DJ logo">
+            <a href="index.html"><img src="images/logo.svg" alt="DJ logo"></a>
             <span>Drew Jezek</span>
         </div>
-        
-        <nav>
-            <div class="hamburger">
-                <ul class="main-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="chamber.html">Chamber Project</a></li>
-                    <li><a href="final.html">Final Project</a></li>
-                </ul>
-            </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="chamber.html">Chamber Project</a>
+            <a href="final.html">Final Project</a>
         </nav>
     </header>
     <main>
         <H1>Home</H1>
-        <section>
+        <section class="about">
             <H2>About Me</H2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse facere, repellendus cupiditate nobis veritatis beatae quis, enim modi officia, quod ut quasi voluptatem sed iure eum velit soluta ex minima.</p>
         </section>
-        <section>
+        <section class="photo">
             <H2>Student Photo</H2>
             <img src="/images/self-opti.webp" alt="Photo of Drew Jezek and his baby">
         </section>
-        <section>
+        <section class = "courses">
             <H2>Web Certificate Courses</H2>
             <section id="courseButtons">
-                <button type="button" id="allCourse">All Courses</button>
-                <button type="button" id="wddCourse">WDD Courses</button>
-                <button type="button" id="cseCourse">CSE Courses</button>
+                <button type="button" id="allCourse">All</button>
+                <button type="button" id="wddCourse">WDD</button>
+                <button type="button" id="cseCourse">CSE</button>
             </section>
             <section id="courses"></section>
-            <p id="credits"></p>
+            <p id="credits">Credits remaining: please select an option above.</p>
         </section>
     </main>
     <footer>
-        <a href="https://www.linkedin.com/in/drew-jezek/"><img src="/images/linkedinIcon.svg"
-                alt="linkedIn icon"></a>
-        <a href="https://github.com/SlayerFluffy"><img src="/images/icons8-github.svg" alt="Github icon"></a>
-        <a href="https://www.facebook.com/the.drewsifer"><img src="/images/icons8-facebook.svg" alt="Facebook icon"></a>
-        <a href="https://www.instagram.com/drewjezek/"><img src="/images/icons8-instagram.svg" alt="Instagram icon"></a>
+        <div class = "footer-icons">
+            <a href="https://www.linkedin.com/in/drew-jezek/"><img src="/images/linkedinIcon.svg"
+                    alt="linkedIn icon"></a>
+            <a href="https://github.com/SlayerFluffy"><img src="/images/icons8-github.svg" alt="Github icon"></a>
+            <a href="https://www.facebook.com/the.drewsifer"><img src="/images/icons8-facebook.svg" alt="Facebook icon"></a>
+            <a href="https://www.instagram.com/drewjezek/"><img src="/images/icons8-instagram.svg" alt="Instagram icon"></a>
+        </div>
         <div class="copywrite">
             <span id="copyYear"></span>
             <p>| Drew Jezek | USA</p>
