@@ -1,0 +1,260 @@
+/* fonts */
+
+.nunito {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+}
+
+.ledger {
+    font-family: "Ledger", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* colors */
+:root {
+    --accent: #00853E;
+    --background: #F9F9EC;
+    --navbackground: #34576cad;
+}
+/* mobile screens*/
+
+/* page headline */
+body {
+    background-color: var(--background);
+}
+
+header {
+    background-color: var(--navbackground);
+    color: white;
+    padding: 5px 20px;
+}
+
+.headerbox {
+    display: flex;
+}
+
+#title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#title a img {
+    height: 3rem;
+}
+
+#title span {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* hamburger button */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.hamburger {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 20px 0;
+    min-width: 40px;
+}
+
+.hamburger.active {
+    margin: 1fr 0;
+}
+
+.hamburger span {
+    background-color: white;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 18px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 36px;
+}
+
+.hamburger.active span:nth-child(1) {
+    top: 18px;
+    transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-45deg);
+}
+
+.main-nav {
+    display: none;
+}
+
+.main-nav.active {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: var(--navbackground);
+}
+
+.main-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.137);
+}
+
+/* main */
+
+
+
+
+
+
+
+
+/* footer */
+.footer-tiles {
+    background: var(--navbackground);
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footer-tiles a {
+    color: white;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-icons a {
+    display: inline-block;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.copywrite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+}
+
+#lastModified {
+    display: flex;
+    font-size: .75rem;
+}
+
+
+/* larger screens */
+@media screen and (min-width: 320px){ 
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #title a img {
+        height: 5rem;
+    }
+
+    #title span {
+        font-size: 1.5rem;
+    }
+
+    .hamburger {
+            display: none;
+        }
+    
+    /* menu navigation */
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-nav {
+        list-style: none;
+        display: flex;
+        justify-content: right;
+        gap: 1rem;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    .main-nav a {
+        border: none;
+        font-size: 1.5rem;
+    }
+
+    /* footer */
+    .footer-tiles {
+        background: var(--navbackground);
+        display: flex;
+        justify-content: space-around;
+        color: white;
+    }
+
+    .footer-tiles a {
+        color: white;
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .footer-icons a {
+        display: inline-block;
+        min-height: 50px;
+        min-width: 50px;
+    }
+
+    .copywrite {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .75rem;
+    }
+
+    #lastModified {
+        display: flex;
+        font-size: .75rem;
+    }
+}
