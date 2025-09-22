@@ -157,7 +157,7 @@ h1 {
         
 section {
     display: grid;
-    grid-template-rows: 105px 70px 45px 25px 25px 25px;
+    grid-template-rows: 105px 70px 45px 35px 35px 25px;
     align-items: center;
     text-align: center;
     border: 1px solid black;
@@ -175,9 +175,10 @@ section img {
     padding: .25rem;
 }
 
-section h3 {
+section h2 {
     color: var(--accent);
     text-shadow: 1px 1px 2px #ffffff;
+    font-size: 1.25rem;
 }
 
 
@@ -207,6 +208,7 @@ th {
     display: flex;
     color: white;
     flex-wrap: wrap;
+    text-shadow: 1px 1px 2px black;
 }
 
 .footer-tiles a {
