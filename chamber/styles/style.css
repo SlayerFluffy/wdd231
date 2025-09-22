@@ -7,7 +7,6 @@
 
 .nunito {
     font-family: "Nunito Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-variation-settings:
@@ -74,7 +73,7 @@ ul {
 }
 
 .hamburger.active {
-    margin: 1fr 0;
+    margin: 1rem 0;
 }
 
 .hamburger span {
