@@ -1,4 +1,9 @@
 /* fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .nunito {
     font-family: "Nunito Sans", sans-serif;
@@ -134,9 +139,64 @@ ul {
 
 /* main */
 
+main {
+    text-align: center;
+}
+
+h1 {
+    color: var(--accent);
+}
+
+.displayMembers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+    margin: 1rem;
+}
+        
+section {
+    display: grid;
+    grid-template-rows: 105px 70px 45px 25px 25px 25px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    height: 100%;
+    padding: 2.5%;
+    background-color: #34576c3c;
+}
+
+section img {
+    justify-self: center;
+    border: 1px solid #fff;
+    box-shadow: 0 0 1rem #555;
+    max-width: 190px;
+    max-height: 100px;
+    padding: .25rem;
+}
+
+section h3 {
+    color: var(--accent);
+    text-shadow: 1px 1px 2px #ffffff;
+}
 
 
+table, th, td {
+    border: 1px solid black;
+    
+}
 
+th, td {
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #c1c1c1;
+}
+
+th {
+    color:#00853E;
+}
 
 
 
