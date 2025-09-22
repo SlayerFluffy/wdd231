@@ -1,0 +1,66 @@
+[
+    {
+        "photo": "images/collins-logo.png",
+        "name": "Collins Aerospace",
+        "address": ["350 Collins Rd NE", "Building 120", "Cedar Rapids, IA 52498"],
+        "phone": "(860) 654-2500",
+        "website": "www.collinsaerospace.com",
+        "membershipLevel": 3
+    },
+    {
+        "photo": "images/crst-logo.png",
+        "name": "CRST",
+        "address": ["201 1st St. SE", "Cedar Rapids, IA 52401"],
+        "phone": "(866) 579-6123",
+        "website": "www.crst.com",
+        "membershipLevel": 3
+    },
+    {
+        "photo": "images/quakeroats-logo.png",
+        "name": "Quaker Oats",
+        "address": ["418 2nd St. NE", "Cedar Rapids, IA 52401"],
+        "phone": "1-800-367-6287",
+        "website": "www.quakeroats.com",
+        "membershipLevel": 3
+    },
+    {
+        "photo": "images/lindale-logo.svg",
+        "name": "Lindale Mall",
+        "address": ["4444 1st Ave NE", "Cedar Rapids, IA 52402"],
+        "phone": "(319) 393-8942",
+        "website": "www.lindalemall.com",
+        "membershipLevel": 2
+    },
+    {
+        "photo": "images/marcus-logo.png",
+        "name": "Marcus Wehrenberg Cedar Rapids Cinema",
+        "address": ["5340 Council Street NE", "Cedar Rapids, IA 52402"],
+        "phone": "(319) 393-8942",
+        "website": "www.marcustheatres.com/theatre-locations.marcus-cedar-rapids-galaxy-16-cine",
+        "membershipLevel": 1
+    },
+    {
+        "photo": "images/gazette-logo.png",
+        "name": "The Gazette",
+        "address": ["116 Third St. SE", "Cedar Rapids, IA 52401"],
+        "phone": "(319) 398-8333",
+        "website": "www.thegazette.com",
+        "membershipLevel": 3
+    },
+    {
+        "photo": "images/crbc-logo.jpg",
+        "name": "Cedar Rapids Bowling Center",
+        "address": ["265 Blairs Ferry Rd NE", "Cedar Rapids, IA 52402"],
+        "phone": "(319) 377-9481",
+        "website": "www.crbowl.com",
+        "membershipLevel": 1
+    },
+    {
+        "photo": "images/kernals-logo.svg",
+        "name": "Cedar Rapids Kernals Professional Baseball Club",
+        "address": ["950 Rockford Rd SW", "Cedar Rapids, IA 52404"],
+        "phone": "(319) 363-3887",
+        "website": "www.milb.com/cedar-rapids",
+        "membershipLevel": 2
+    }
+]
