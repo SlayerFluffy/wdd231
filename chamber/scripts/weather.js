@@ -28,7 +28,7 @@ async function apiFetch(url) {
 
 // run fetch
 apiFetch(url);
-
+apiFetch(forecastURL);
 
 
 // display weather api data for temperature and set icon
@@ -50,5 +50,5 @@ function displayResults(data) {
 
 // display 3 day forecast
 function displayForecast(data) {
-    
+    // here is where i am trying to start writing a function to display a 3 day forecast
 }
