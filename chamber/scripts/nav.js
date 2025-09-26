@@ -1,6 +1,7 @@
 // hamburger button on small screen
 const ham = document.querySelector(".hamburger");
 const mainNav = document.querySelector(".main-nav");
+const cta = document.querySelector("#cta");
 
 ham.addEventListener("click", hamToggle);
 
@@ -18,7 +19,7 @@ function hamToggle()
 // reset nav if window is changed above or below 320 px. 
 
 function largeNav() {
-    if (window.innerWidth >= 320) {
+    if (window.innerWidth >= 450) {
         mainNav.style.display = "flex";
     } else {
         if (mainNav.classList.contains("active")) {
