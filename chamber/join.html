@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Drew Jezek">
-    <meta name="description" content="A directory page for WDD231 Chamber of Commerce project">
-    <title>Chamber of Commerce Directory</title>
-    <meta property="og:title" content="Chamber of Commerce Directory">
-    <meta property="og:description" content="A directory page for WDD231 Chamber of Commerce project">
+    <meta name="description" content="A form page to join the Cedar Rapids Chamber of Commerce for WDD231 Chamber of Commerce project">
+    <title>Join Chamber of Commerce</title>
+    <meta property="og:title" content="Join Chamber of Commerce">
+    <meta property="og:description" content="A page to request to join WDD231 Chamber of Commerce project">
     <meta property="og:image" content="images/cedarrapids.jpg">
     <meta property="og:url" content="https://www.https://slayerfluffy.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" href="images/crcc-fav.ico">
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +51,161 @@
 
 
     <main>
+        <div>
+            <h2 class="form-head">Application for membership form</h2>
+            <form action="thankyou.html" method="get">            
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" required title="Applicant's first name" autocomplete="given-name">
 
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" required title="Applicant's last name" autocomplete="family-name">
+
+                <label for="orgTitle">Organizational Title</label>
+                <input id="orgTitle" name="orgTitle" type="text" title="Applicant's title within the organization" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$" placeholder="e.g., Executive Director">
+
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="email" required title="Applicant's email address" autocomplete="email" placeholder="name@example.com">
+
+                <label for="phone">Mobile Phone</label>
+                <input id="phone" name="phone" type="tel" required title="Applicant's mobile phone number" autocomplete="tel" inputmode="tel" placeholder="(319) 555-0123">
+
+                <label for="organization">Business / Organization Name</label>
+                <input id="organization" name="organization" type="text" required title="Business or organization name" autocomplete="organization">
+
+                <label for="membership">Membership Level</label>
+                <select id="membership" name="membership" required title="Select a membership level">
+                    <option value="" disabled selected>Select membership level</option>
+                    <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+
+                <label for="description">Business / Organization Description</label>
+                <textarea id="description" name="description" title="Describe the business or organization" rows="6"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Submit Application">
+
+                <script>
+                    const ts = document.getElementById('timestamp');
+                    if (ts) ts.value = new Date().toISOString();
+                </script>
+            </form>
+        </div>
+
+        <section class="membership-levels">
+            <h2 class="membership-levels">Membership Levels</h2>
+
+            <div class="cards-grid">
+                <article class="card membership-card">
+                    <h3 id="np-title">NP Membership (Non‑Profit)</h3>
+                    <p>No fee for qualifying non‑profit organizations. Support, networking, and event access.</p>
+                    <button type="button" class="card-link" data-modal="modal-np">Learn more</button>
+                </article>
+
+                <article class="card membership-card">
+                    <h3 id="bronze-title">Bronze Membership</h3>
+                    <p>Basic membership benefits including directory listing and event invitations.</p>
+                    <button type="button" class="card-link" data-modal="modal-bronze">Learn more</button>
+                </article>
+
+                <article class="card membership-card">
+                    <h3 id="silver-title">Silver Membership</h3>
+                    <p>Enhanced visibility, promotional opportunities, and priority event access.</p>
+                    <button type="button" class="card-link" data-modal="modal-silver">Learn more</button>
+                </article>
+
+                <article class="card membership-card">
+                    <h3 id="gold-title">Gold Membership</h3>
+                    <p>Premium benefits with featured placement, sponsorship options, and premium support.</p>
+                    <button type="button" class="card-link" data-modal="modal-gold">Learn more</button>
+                </article>
+            </div>
+
+            <!-- Modals using the semantic dialog element -->
+            <dialog id="modal-np" class="modal">
+                <div class="modal-content">
+                    <h3>NP Membership (Non‑Profit)</h3>
+                    <button class="modal-close" aria-hidden="true">&times;</button>
+
+                    <div class="modal-body">
+                        <p>Benefits:</p>
+                        <ul>
+                            <li>No membership fee for qualifying organizations</li>
+                            <li>Access to networking events and volunteer opportunities</li>
+                            <li>Listing in the business directory</li>
+                            <li>Discounted sponsorship rates for community events</li>
+                        </ul>
+                    </div>
+                    <button class="modal-close"></button>
+                </div>
+            </dialog>
+
+            <dialog id="modal-bronze" class="modal">
+                <div class="modal-content">
+                    
+                    <h3>Bronze Membership</h3>
+                    <button class="modal-close" aria-hidden="true">&times;</button>
+                    
+                    <div class="modal-body">
+                        <p>Benefits:</p>
+                        <ul>
+                            <li>Directory listing and basic profile</li>
+                            <li>Invitations to member events</li>
+                            <li>Access to member-only resources</li>
+                            <li>Opportunities to join committees</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="modal-close"></button>
+                    
+                </div>
+            </dialog>
+
+            <dialog id="modal-silver" class="modal">
+                <div class="modal-content">
+                    
+                    <h3>Silver Membership</h3>
+                    <button class="modal-close" aria-hidden="true">&times;</button>
+                
+                    <div class="modal-body">
+                        <p>Benefits:</p>
+                        <ul>
+                            <li>Enhanced directory placement and profile highlights</li>
+                            <li>Promotional opportunities (social posts, newsletters)</li>
+                            <li>Priority access to event registrations</li>
+                            <li>Discounts on chamber services</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="modal-close"></button>
+                    
+                </div>
+            </dialog>
+
+            <dialog id="modal-gold" class="modal">
+                <div class="modal-content">
+                    
+                    <h3>Gold Membership</h3>
+                    <button class="modal-close" aria-hidden="true">&times;</button>
+                
+                    <div class="modal-body">
+                        <p>Benefits:</p>
+                        <ul>
+                            <li>Featured placement on website and printed materials</li>
+                            <li>Sponsorship opportunities for major events</li>
+                            <li>Dedicated support and promotional consulting</li>
+                            <li>Exclusive networking with chamber leaders</li>
+                        </ul>
+                    </div>
+   
+                    <button class="modal-close"></button>
+      
+                </div>
+            </dialog>
+        </section>
     </main>
 
 
