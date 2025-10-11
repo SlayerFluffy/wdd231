@@ -222,7 +222,7 @@ h2 {
     grid-area: weather;
     justify-self: left;
     padding: 1rem;
-    align-self: top;
+    align-self: self-start;
 }
 
 .forecast {

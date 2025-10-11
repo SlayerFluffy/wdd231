@@ -18,6 +18,7 @@ function displayItems(attractions) {
         const pic = document.createElement('img')
         pic.src = `${place.photo}`
         pic.alt = place.name
+        pic.loading = lazy
         picfig.appendChild(pic)
         card.appendChild(picfig)
 
