@@ -26,7 +26,7 @@
 :root {
     --accent: #00853E;
     --background: #F9F9EC;
-    --navbackground: #34576c97;
+    --navbackground: #2c495b97;
     --headlines: #242525;
 }
 /* mobile screens*/
@@ -59,6 +59,7 @@ header {
 #title span {
     font-size: 1rem;
     padding: 10px;
+    text-shadow: 1px 1px 2px black;
 }
 
 /* hamburger button */
@@ -118,6 +119,7 @@ ul {
 
 .main-nav {
     display: none;
+    text-shadow: 1px 1px 2px black;
 }
 
 .main-nav.active {
