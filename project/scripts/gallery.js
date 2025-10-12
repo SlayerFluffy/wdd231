@@ -9,6 +9,7 @@ const petGallery = document.querySelector('.gallery')
 function displayPets(pets) {
     pets.forEach(pet => {
         const card = document.createElement('div')
+        card.classList.add('card')
 
         const pic = document.createElement('img')
         pic.src = pet.image
@@ -22,6 +23,7 @@ function displayPets(pets) {
 
         const species = document.createElement('span')
         species.innerText = pet.species
+        species.style.display = "none";
         card.appendChild(species)
 
         const age = document.createElement('p')

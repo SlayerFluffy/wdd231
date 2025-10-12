@@ -18,7 +18,7 @@ function hamToggle()
 // reset nav if window is changed above or below 320 px. 
 
 function largeNav() {
-    if (window.innerWidth >= 475) {
+    if (window.innerWidth >= 535) {
         mainNav.style.display = "flex";
     } else {
         if (mainNav.classList.contains("active")) {
