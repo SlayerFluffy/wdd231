@@ -125,6 +125,11 @@ header {
     width: 80px;
 }
 
+
+
+
+
+
 /* hamburger button */
 
 .hamburger {
@@ -203,6 +208,59 @@ nav a.active {
     border-radius: 4px;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+/* footer */
+footer img {
+    display: flex;
+    height: 50px;
+}
+.footer-tiles {
+    background: var(--navbackground);
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    text-shadow: 1px 1px 2px black;
+}
+
+.footer-tiles a {
+    color: white;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-icons a {
+    display: inline-block;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.copywrite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+}
+
+#lastModified {
+    display: flex;
+    font-size: .75rem;
+}
+
+
+
 
 
 
