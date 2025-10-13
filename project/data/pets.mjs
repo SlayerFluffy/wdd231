@@ -2,7 +2,7 @@ export const pets = [
     {
       "name": "Tegan",
       "species": "Cat",
-      "age": "2 years",
+      "age": "1 year",
       "breed": "Tuxedo",
       "description": "A curious and clever cat who loves exploring sunny windowsills and chasing feather toys. Tegan is independent but affectionate once she warms up to you.",
       "image": "images/tegan.webp"
@@ -26,7 +26,7 @@ export const pets = [
     {
       "name": "Goose",
       "species": "Dog",
-      "age": "3 months",
+      "age": "1 month",
       "breed": "Chihuahua/Blue Heeler mix",
       "description": "Friendly and outgoing, Goose loves fetch, swimming, and making new friends—human or otherwise. A big heart wrapped in a tiny package.",
       "image": "images/goose.webp"
@@ -34,7 +34,7 @@ export const pets = [
     {
       "name": "Duck",
       "species": "Dog",
-      "age": "3 months",
+      "age": "1 month",
       "breed": "Chihuahua/Heeler Mix",
       "description": "Smart and energetic, Duck thrives on playtime and learning new tricks. He’s happiest when he has a job to do and someone to do it with.",
       "image": "images/duck.webp"

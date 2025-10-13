@@ -279,13 +279,46 @@ main {
     margin: 5%;
 }
 
-.card p {
-    padding: 1% 5%;
-}
 
 .card p:last-of-type {
     padding-bottom: 5%;
 }
+
+
+.cardModal {
+    margin: auto;
+    padding: 1rem;
+    max-width: 80%;
+    border: 1px solid var(--borders);
+    border-radius: 10px;
+    background-color: var(--card);
+    box-shadow: 0 0 1em rgb(0 0 0 / 30%);
+
+    p {
+        padding: 3rem;
+        padding-bottom: 0;
+    }
+
+    &::backdrop {
+        background: rgb(0 0 0 / 70%);
+    }
+
+    .closeModal {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
 
 /* footer */
 .footer-span {

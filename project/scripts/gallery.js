@@ -7,6 +7,7 @@ const petGallery = document.querySelector('.gallery')
 
 // create cards and display for gallery
 function displayPets(pets) {
+    petGallery.innerHTML=""
     pets.forEach(pet => {
         const card = document.createElement('div')
         card.classList.add('card')
@@ -34,13 +35,49 @@ function displayPets(pets) {
         breed.innerText = pet.breed
         card.appendChild(breed)
 
+        const modal = document.createElement('dialog')
+        modal.classList.add("cardModal")
+
         const description = document.createElement('p')
         description.innerText = pet.description
-        card.appendChild(description)
+        modal.appendChild(description)
+
+        const button = document.createElement('button')
+        button.classList.add('closeModal')
+        button.innerText = 'Close'
+        modal.appendChild(button)
+
+        // open this card's modal when the card is clicked
+        card.addEventListener('click', () => {
+            modal.showModal();
+        });
+
+        // close the modal when its close button is clicked and prevent the click from bubbling back to the card
+        button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            modal.close();
+        });
+
+        card.appendChild(modal);
 
         petGallery.appendChild(card)
     })
-}
+};
 
-// display cards
+displayPets(pets);
+
+
+// --- Filter logic ---
+
+// button references
+const allBtn = document.querySelector('.allButton')
+const dogBtn = document.querySelector('.dogButton')
+const catBtn = document.querySelector('.catButton')
+
+// event listeners
+allBtn.addEventListener('click', () => displayPets(pets))
+dogBtn.addEventListener('click', () => displayPets(pets.filter(p => p.species.toLowerCase() === "dog")))
+catBtn.addEventListener('click', () => displayPets(pets.filter(p => p.species.toLowerCase() === "cat")))
+
+// initial load
 displayPets(pets)
