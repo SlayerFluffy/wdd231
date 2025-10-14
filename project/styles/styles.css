@@ -293,36 +293,36 @@ main {
     border-radius: 10px;
     background-color: var(--card);
     box-shadow: 0 0 1em rgb(0 0 0 / 30%);
+}
 
-    p {
-        padding: 3rem;
-        padding-bottom: 0;
-    }
+.cardModal p {
+    padding: 3rem;
+    padding-bottom: 0;
+}
 
-    a {
-        display: inline-block;
-        margin: 1rem 43% 1rem; 
-        width: 14%;
-        text-align: center;
-        padding: .5rem 1rem;
-        background: var(--accent);
-        color: #fff;
-        border-radius: 6px;
-        text-decoration: none;
-    }
+.cardModal a {
+    display: inline-block;
+    margin: 1rem 43% 1rem;
+    width: 14%;
+    text-align: center;
+    padding: .5rem 1rem;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+}
 
-    &::backdrop {
-        background: rgb(0 0 0 / 70%);
-    }
+.cardModal::backdrop {
+    background: rgb(0 0 0 / 70%);
+}
 
-    .closeModal {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
+.cardModal .closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .about-page {
