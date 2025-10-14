@@ -1,0 +1,142 @@
+:root {
+    --headline: #ff6B6B;
+    --background: #FFF8F0;
+    --body-text: #333333;
+    --accent: #F6AE2D;
+    --card: #F7EFE6;
+    --borders: #E6DDD2;
+}
+
+/* General Page Layout */
+body {
+    font-family: "Lato", sans-serif;
+    background-color: var(--background);
+    color: var(--body-text);
+    margin: 0;
+    padding: 0 1rem;
+    line-height: 1.6;
+}
+
+/* Header & Intro */
+h1 {
+    text-align: center;
+    color: var(--headline);
+    margin-top: 2rem;
+    font-family: "Pacifico", cursive;
+    font-size: 2.2rem;
+}
+
+main p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+/* Form Container */
+.adoptionForm {
+    background-color: var(--card);
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border: 1px solid var(--borders);
+}
+
+/* Form Inputs */
+.adoptionForm p {
+    margin-bottom: 1rem;
+}
+
+.adoptionForm input[type="text"],
+.adoptionForm input[type="email"],
+.adoptionForm input[type="tel"],
+.adoptionForm select,
+.adoptionForm textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--borders);
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.adoptionForm input:focus,
+.adoptionForm select:focus,
+.adoptionForm textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 5px rgba(246, 174, 45, 0.4);
+    outline: none;
+}
+
+/* Add spacing between chunks */
+.adoptionForm p:nth-of-type(9) { /* After yard question */
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--borders);
+    padding-bottom: 1rem;
+}
+
+.adoptionForm p:nth-of-type(12) { /* After pet selection */
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--borders);
+    padding-bottom: 1rem;
+}
+
+/* Species Radio Section */
+.speciesRadio {
+    margin-bottom: 1rem;
+}
+
+.speciesRadio p:first-child {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Submit Button */
+button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #e89b1f; /* slightly darker shade of accent */
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 535px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+    }
+
+    .adoptionForm {
+        padding: 1rem;
+        margin: 1rem auto;
+        box-shadow: none;
+        border: 1px solid var(--borders);
+    }
+
+    input, select, textarea {
+        font-size: 0.95rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.9rem;
+    }
+}

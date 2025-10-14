@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Drew Jezek">
+    <meta name="description" content="Application page for The Pawfect Match">
+    <title>Apply</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/form.js" type = "module"></script>
+
+    <meta property="og:title" content="Apply for an adoption from The Pawfect Match">
+    <meta property="og:description" content="An online form to submit an adoption application from The Pawfect Match adoption center">
+    <meta property="og:image" content="images/heroimg.webp">
+    <meta property="og:url" content="https://www.https://slayerfluffy.github.io/wdd231/project/apply.html">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="headerbox">
+            <div id="title">
+                <a href="index.html"><img src="images/pawfectmatchicon.svg" alt="The Pawfect Match logo"></a>
+                <span>The Pawfect Match</span>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="apply.html">Apply</a>
+        </nav>
+    </header>
+    <main class="form-page">
+        <h1>Thank you for considering adoption</h1>
+        <p>Pet adoption is a very serious decision. Year after year, more animals are left alone and abandoned. Adoption allows these animals a second chance at a family. We are very grateful that you want 
+            to help in this effort. But we also want to do what is best for the animals. As such, we ask you to fill out this application so we can make sure we are finding the right fit for each animal. The pawfect match.
+        </p>
+        <form class="adoptionForm" action="thankyou.html">
+            <p>First Name: <input type="text" name="fname"></p>
+            <p>Last Name: <input type="text" name="lname"></p>
+            <p>Email Address: <input type="email" name="email"></p>
+            <p>Phone Number: <input type="tel"></p>
+            
+            <p>Address: <input type="text" name="address"></p>
+            <p>City: <input type="text" name="city"></p>
+            <p>State: <input type="text" name="state"></p>
+            <p>ZIP: <input type="text" name="zip"></p>
+            <p>Housing: 
+                <select name="housing">
+                    <option value="" disabled selected>Select housing</option>
+                    <option value="own">Own</option>
+                    <option value="rent">Rent</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            <p>Do you have a yard? 
+                <label><input type="radio" name="yard" value="yes"> Yes</label>
+                <label><input type="radio" name="yard" value="no"> No</label>
+            </p>
+            <div class="speciesRadio">
+                <p>Plese select a species:</p>
+                <p><input type="radio" name="species" value="cat"> Cat</p>
+                <p><input type="radio" name="species" value="dog"> Dog</p>
+            </div>
+            <p>Please select which pet you are interested in: <select id="pets">
+                    <option value="" disabled selected>Choose an animal above</option>
+                </select></p>
+            <p>Other pets or household members: <textarea name="otherHousehold" rows="3"></textarea></p>
+            <p>Additional comments: <textarea name="comments" rows="4"></textarea></p>
+
+            <p><button type="submit">Submit application</button></p>
+        </form>
+    </main>
+    <footer>
+        <span class="footer-span"></span>
+        <div class="footer-tiles">
+            <img src="images/pawfectmatchicon.svg" alt="pawfect match icon">
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/drew-jezek/"><img src="/images/linkedinIcon.svg"
+                        alt="linkedIn icon"></a>
+                <a href="https://github.com/SlayerFluffy"><img src="/images/icons8-github.svg" alt="Github icon"></a>
+                <a href="https://www.facebook.com/the.drewsifer"><img src="/images/icons8-facebook.svg"
+                        alt="Facebook icon"></a>
+                <a href="https://www.instagram.com/drewjezek/"><img src="/images/icons8-instagram.svg"
+                        alt="Instagram icon"></a>
+            </div>
+            <div class="copywrite">
+                <p><span id="copyYear"></span> | Drew Jezek | USA</p>
+                <p id="lastModified"></p>
+                <a href="references.html">Attributions</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

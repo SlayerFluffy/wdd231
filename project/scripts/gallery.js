@@ -47,6 +47,11 @@ function displayPets(pets) {
         button.innerText = 'Close'
         modal.appendChild(button)
 
+        const adopt = document.createElement('a')
+        adopt.innerText = 'Adopt me!'
+        adopt.href = 'apply.html'
+        modal.appendChild(adopt)
+
         // open this card's modal when the card is clicked
         card.addEventListener('click', () => {
             modal.showModal();
