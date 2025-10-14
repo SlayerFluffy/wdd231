@@ -1,6 +1,6 @@
 :root {
-    --headline: #ff6B6B;
-    --background: #FFF8F0;
+    --headline: #a94747;
+    --background: #f8f6f3;
     --body-text: #333333;
     --accent: #F6AE2D;
     --card: #F7EFE6;
@@ -24,6 +24,7 @@ h1 {
     margin-top: 2rem;
     font-family: "Pacifico", cursive;
     font-size: 2.2rem;
+    
 }
 
 main p {
