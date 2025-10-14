@@ -75,9 +75,9 @@ displayPets(pets);
 // --- Filter logic ---
 
 // button references
-const allBtn = document.querySelector('.allButton')
-const dogBtn = document.querySelector('.dogButton')
-const catBtn = document.querySelector('.catButton')
+const allBtn = document.querySelector('#allButton')
+const dogBtn = document.querySelector('#dogButton')
+const catBtn = document.querySelector('#catButton')
 
 // event listeners
 allBtn.addEventListener('click', () => displayPets(pets))
